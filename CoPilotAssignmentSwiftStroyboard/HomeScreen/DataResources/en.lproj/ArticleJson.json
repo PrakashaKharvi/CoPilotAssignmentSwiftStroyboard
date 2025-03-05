@@ -1,0 +1,32 @@
+/* 
+  Article.json
+  CoPilotAssignmentSwiftStroyboard
+  Created by Prakasha on 05/03/25.
+*/
+
+{
+  "status": 1,
+  "message": "success",
+  "data": {
+    "articleId": "a2b448sq",
+    "published": "2024-12-24 13:45",
+    "author": {
+      "authorId": "c3js6384",
+      "authorImage": "",
+      "authorName": "Anonymous"
+    },
+    "category": {
+      "categoryId": "a9d7hds2",
+      "categoryName": "Technology"
+    },
+    "tags": [
+      "technology",
+      "Gen AI",
+      "Copilot"
+    ],
+    "title": "GitHub Copilot - About, Features and Use Cases",
+    "Subtitle": "quantifying GitHub Copilot’s impact on developer productivity and happiness",
+    "hero": "https://www.freecodecamp.org/news/content/images/size/w2000/2023/06/Screenshot-2023-06-14-at-12.42.04-PM.png",
+    "description": "<p>Have you ever wondered how coding could become even more efficient? With GitHub Copilot, you can utilise the power of AI to generate code suggestions according to your specific context</p>\n    <h2 id='1'>Features of GitHub Copilot</h2> \n  <ul> \n   <li>GitHub Copilot uses an AI model trained on a large corpus of code from publicly available sources, including code on GitHub itself. This allows it to understand and generate programming patterns, functions, and entire classes.</li> \n   <li>It assists in writing new code and contributing to existing code. The tool can suggest complete methods, boilerplate code, tests, and even complex algorithms.</li>\n  </ul>"
+  }
+}
