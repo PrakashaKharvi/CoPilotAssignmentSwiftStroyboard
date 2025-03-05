@@ -37,6 +37,44 @@
 			);
 			target = CDD1AFC02D7828A900DC6D22 /* CoPilotAssignmentSwiftStroyboard */;
 		};
+		CDD1AFFC2D782F6C00DC6D22 /* Exceptions for "CoPilotAssignmentSwiftStroyboard" folder in "CoPilotAssignmentSwiftStroyboardTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"/Localized: HomeScreen/DataResources/ArticleJson.json",
+				Base/AppCoordinator.swift,
+				Base/BaseViewController.swift,
+				Base/BaseViewModel.swift,
+				HomeScreen/Data/DTOs/ArticleModelDTO.swift,
+				HomeScreen/Data/LocalService/LocalArticleService.swift,
+				HomeScreen/Data/Network/ArticleService.swift,
+				HomeScreen/Data/Repositories/ArticleRepository.swift,
+				HomeScreen/Domain/Models/ArticleModel.swift,
+				HomeScreen/Domain/UseCases/FetchArticleUseCase.swift,
+				HomeScreen/Presentation/Controllers/HomeViewController.swift,
+				HomeScreen/Presentation/ViewModels/HomeViewModel.swift,
+				HomeScreen/Presentation/Views/HomeScreen.storyboard,
+			);
+			target = CDD1AFD62D7828AB00DC6D22 /* CoPilotAssignmentSwiftStroyboardTests */;
+		};
+		CDD1AFFD2D782F6C00DC6D22 /* Exceptions for "CoPilotAssignmentSwiftStroyboard" folder in "CoPilotAssignmentSwiftStroyboardUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"/Localized: HomeScreen/DataResources/ArticleJson.json",
+				Base/AppCoordinator.swift,
+				Base/BaseViewController.swift,
+				Base/BaseViewModel.swift,
+				HomeScreen/Data/DTOs/ArticleModelDTO.swift,
+				HomeScreen/Data/LocalService/LocalArticleService.swift,
+				HomeScreen/Data/Network/ArticleService.swift,
+				HomeScreen/Data/Repositories/ArticleRepository.swift,
+				HomeScreen/Domain/Models/ArticleModel.swift,
+				HomeScreen/Domain/UseCases/FetchArticleUseCase.swift,
+				HomeScreen/Presentation/Controllers/HomeViewController.swift,
+				HomeScreen/Presentation/ViewModels/HomeViewModel.swift,
+				HomeScreen/Presentation/Views/HomeScreen.storyboard,
+			);
+			target = CDD1AFE02D7828AB00DC6D22 /* CoPilotAssignmentSwiftStroyboardUITests */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -44,6 +82,8 @@
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				CDD1AFE92D7828AB00DC6D22 /* Exceptions for "CoPilotAssignmentSwiftStroyboard" folder in "CoPilotAssignmentSwiftStroyboard" target */,
+				CDD1AFFC2D782F6C00DC6D22 /* Exceptions for "CoPilotAssignmentSwiftStroyboard" folder in "CoPilotAssignmentSwiftStroyboardTests" target */,
+				CDD1AFFD2D782F6C00DC6D22 /* Exceptions for "CoPilotAssignmentSwiftStroyboard" folder in "CoPilotAssignmentSwiftStroyboardUITests" target */,
 			);
 			path = CoPilotAssignmentSwiftStroyboard;
 			sourceTree = "<group>";
