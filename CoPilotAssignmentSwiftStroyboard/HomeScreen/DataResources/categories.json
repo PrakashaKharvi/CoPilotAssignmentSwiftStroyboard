@@ -1,0 +1,13 @@
+
+{
+ "status": 1,
+  "message": "success",
+  "data": {
+	"categories": [
+	 {
+		"categoryId": "a9d7hds2",
+		"categoryName": "Technology"
+	 }
+	]
+  }
+}

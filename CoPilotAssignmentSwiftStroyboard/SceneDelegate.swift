@@ -30,13 +30,20 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //            UserViewModel(fetchUsersUseCase: r.resolve(FetchUsersUseCase)!)
 //        }
         
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        
+        let remoteDataSource = LocalFilterService() //ArticleRemoteDataSource()
+        let repository = FilterRepository(service: remoteDataSource) //DefaultArticleRepository(remoteDataSource: remoteDataSource)
+        let fetchArticlesUseCase = FetchFilterUseCase(filterRepository: repository) //DefaultFetchArticlesUseCase(repository: repository)
+        let viewModel = HomeViewModel(fetchFilterUseCase: fetchArticlesUseCase)
+
         
         let storyboard = UIStoryboard(name: "HomeScreen", bundle: nil)
         let homeVC = storyboard.instantiateInitialViewController() as! HomeViewController
-//        let userVC = navController.topViewController as! HomeViewController
-        homeVC.viewModel = HomeViewModel() //container.resolve(HomeViewModel)!
-//
-        window?.rootViewController = homeVC
+        homeVC.viewModel = viewModel //container.resolve(HomeViewModel)!
+        
+        window = UIWindow(windowScene: windowScene)
+        window?.rootViewController = UINavigationController(rootViewController: homeVC)
         window?.makeKeyAndVisible()
     }
 

@@ -1,0 +1,130 @@
+{
+    "status": 1,
+    "message": "success",
+    "data": [
+        {
+            "title": "Author",
+            "id": "1",
+            "list": [
+                {
+                    "id": "0",
+                    "selected": "true", 
+                    "name": "Author"
+                },
+                {
+                    "id": "1",
+                    "selected": "false",
+                    "name": "Ramesh Govinda Narayanan"
+                },
+                {
+                    "id": "2",
+                    "selected": "false",
+                    "name": "Suresh"
+                },
+                {
+                    "id": "3",
+                    "selected": "false",
+                    "name": "Rajesh"
+                },
+                {
+                    "id": "4",
+                    "selected": "false",
+                    "name": "Manesh"
+                }
+            ]
+        },
+        {
+            "title": "Category",
+            "id": "2",
+            "list": [
+                {
+                    "id": "0",
+                    "selected": "true", 
+                    "name": "Category"
+                },
+                {
+                    "id": "1",
+                    "selected": "false",
+                    "name": "Technology"
+                },
+                {
+                    "id": "2",
+                    "selected": "false",
+                    "name": "Sports"
+                },
+                {
+                    "id": "3",
+                    "selected": "false",
+                    "name": "Science"
+                },
+                {
+                    "id": "4",
+                    "selected": "false",
+                    "name": "News"
+                }
+            ]
+        },
+        {
+            "title": "Article Type",
+            "id": "3",
+            "list": [
+                {
+                    "id": "0",
+                    "selected": "true", 
+                    "name": "Article Type"
+                },
+                {
+                    "id": "1",
+                    "selected": "false",
+                    "name": "Story"
+                },
+                {
+                    "id": "2",
+                    "selected": "false",
+                    "name": "Essay"
+                },
+                {
+                    "id": "3",
+                    "selected": "false",
+                    "name": "Short Story"
+                },
+                {
+                    "id": "4",
+                    "selected": "false",
+                    "name": "Full Story"
+                }
+            ]
+        },
+        {
+            "title": "Tag",
+            "id": "4",
+            "list": [
+                {
+                    "id": "0",
+                    "selected": "true", 
+                    "name": "Tag"
+                },
+                {
+                    "id": "1",
+                    "selected": "false",
+                    "name": "Technology"
+                },
+                {
+                    "id": "2",
+                    "selected": "false",
+                    "name": "AI Type"
+                },
+                {
+                    "id": "3",
+                    "selected": "false",
+                    "name": "Copilot"
+                },
+                {
+                    "id": "4",
+                    "selected": "false",
+                    "name": "ChatGPT"
+                }
+            ]
+        }
+    ]
+}
