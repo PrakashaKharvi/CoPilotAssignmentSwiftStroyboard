@@ -41,18 +41,24 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				"/Localized: HomeScreen/DataResources/ArticleJson.json",
+				"/Localized: HomeScreen/DataResources/FilterDataJson.json",
 				Base/AppCoordinator.swift,
 				Base/BaseViewController.swift,
 				Base/BaseViewModel.swift,
-				HomeScreen/Data/DTOs/ArticleModelDTO.swift,
-				HomeScreen/Data/LocalService/LocalArticleService.swift,
+				HomeScreen/Data/DTOs/FilterModelDTO.swift,
+				HomeScreen/Data/LocalService/LocalFilterService.swift,
 				HomeScreen/Data/Network/ArticleService.swift,
-				HomeScreen/Data/Repositories/ArticleRepository.swift,
-				HomeScreen/Domain/Models/ArticleModel.swift,
-				HomeScreen/Domain/UseCases/FetchArticleUseCase.swift,
+				HomeScreen/Data/Repositories/FilterRepository.swift,
+				HomeScreen/DataResources/categories.json,
+				HomeScreen/DataResources/homePage.json,
+				HomeScreen/Domain/Models/FilterDataModel.swift,
+				HomeScreen/Domain/UseCases/FetchFilterUseCase.swift,
 				HomeScreen/Presentation/Controllers/HomeViewController.swift,
 				HomeScreen/Presentation/ViewModels/HomeViewModel.swift,
+				HomeScreen/Presentation/Views/DropDownCollectionViewCell.swift,
+				HomeScreen/Presentation/Views/DropDownCollectionViewCell.xib,
 				HomeScreen/Presentation/Views/HomeScreen.storyboard,
+				Utilities/DropdownViewController.swift,
 			);
 			target = CDD1AFD62D7828AB00DC6D22 /* CoPilotAssignmentSwiftStroyboardTests */;
 		};
@@ -60,18 +66,24 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				"/Localized: HomeScreen/DataResources/ArticleJson.json",
+				"/Localized: HomeScreen/DataResources/FilterDataJson.json",
 				Base/AppCoordinator.swift,
 				Base/BaseViewController.swift,
 				Base/BaseViewModel.swift,
-				HomeScreen/Data/DTOs/ArticleModelDTO.swift,
-				HomeScreen/Data/LocalService/LocalArticleService.swift,
+				HomeScreen/Data/DTOs/FilterModelDTO.swift,
+				HomeScreen/Data/LocalService/LocalFilterService.swift,
 				HomeScreen/Data/Network/ArticleService.swift,
-				HomeScreen/Data/Repositories/ArticleRepository.swift,
-				HomeScreen/Domain/Models/ArticleModel.swift,
-				HomeScreen/Domain/UseCases/FetchArticleUseCase.swift,
+				HomeScreen/Data/Repositories/FilterRepository.swift,
+				HomeScreen/DataResources/categories.json,
+				HomeScreen/DataResources/homePage.json,
+				HomeScreen/Domain/Models/FilterDataModel.swift,
+				HomeScreen/Domain/UseCases/FetchFilterUseCase.swift,
 				HomeScreen/Presentation/Controllers/HomeViewController.swift,
 				HomeScreen/Presentation/ViewModels/HomeViewModel.swift,
+				HomeScreen/Presentation/Views/DropDownCollectionViewCell.swift,
+				HomeScreen/Presentation/Views/DropDownCollectionViewCell.xib,
 				HomeScreen/Presentation/Views/HomeScreen.storyboard,
+				Utilities/DropdownViewController.swift,
 			);
 			target = CDD1AFE02D7828AB00DC6D22 /* CoPilotAssignmentSwiftStroyboardUITests */;
 		};

@@ -18,8 +18,8 @@ class AppCoordinator {
     func start() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let homeViewController = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
-        let viewModel = HomeViewModel()
-        homeViewController.viewModel = viewModel
+//        let viewModel = HomeViewModel()
+//        homeViewController.viewModel = viewModel
         window?.rootViewController = homeViewController
         window?.makeKeyAndVisible()
     }

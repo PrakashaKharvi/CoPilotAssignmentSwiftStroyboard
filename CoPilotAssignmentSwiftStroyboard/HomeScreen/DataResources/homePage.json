@@ -1,0 +1,30 @@
+{
+ "status": 1,
+  "message": "success",
+  "data": {
+  "page": 1,
+  "categoryId": null,
+  "tag": "technology",
+  "authorName": "Anonymous",
+  "articles": [
+  {
+    "title": "GitHub Copilot - About, Features and Use Cases",
+    "hero": "https://www.freecodecamp.org/news/content/images/size/w2000/2023/06/Screenshot-2023-06-14-at-12.42.04-PM.png",
+    "articleId": "a2b448sq",
+    "categoryId": "r4wd2u8",
+    "authorId": "y7w3w242",
+    "articleType": 1,
+    "tags": ["Science", "Technology"]
+  },
+  {
+  "title": "Has Codeium Cracked the Code for AI Assistants?",
+  "hero": "https://www.bigdatawire.com/wp-content/uploads/2024/05/AI-copilot_shutterstock_AI-generated.jpg",
+  "articleId": "b2n2ss92",
+  "categoryId": "ewd32s3",
+  "authorId": "n7232g2",
+  "articleType": 1,
+  "tags": ["Science", "Technology"]
+  }
+  ]
+}
+}
