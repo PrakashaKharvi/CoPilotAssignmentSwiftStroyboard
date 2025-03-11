@@ -1,5 +1,5 @@
 //
-//  LocalFilterData.swift
+//  LocaleFilterData.swift
 //  CoPilotAssignmentSwiftStroyboard
 //
 //  Created by Prakasha on 06/03/25.
@@ -11,7 +11,7 @@ protocol FilterServiceProtocol {
     func fetchFilters(completion: @escaping (Result<FilterModel, Error>) -> Void)
 }
 
-class LocalFilterService: FilterServiceProtocol {
+class LocaleFilterService: FilterServiceProtocol {
     func fetchFilters(completion: @escaping (Result<FilterModel, any Error>) -> Void) {
         guard let url = Bundle.main.url(forResource: "FilterDataJson", withExtension: "json") else {
             completion(.failure(NSError(domain: "File Not Found", code: 404, userInfo: nil)))

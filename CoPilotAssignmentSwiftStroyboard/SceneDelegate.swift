@@ -32,10 +32,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
-        let remoteDataSource = LocalFilterService() //ArticleRemoteDataSource()
-        let repository = FilterRepository(service: remoteDataSource) //DefaultArticleRepository(remoteDataSource: remoteDataSource)
-        let fetchArticlesUseCase = FetchFilterUseCase(filterRepository: repository) //DefaultFetchArticlesUseCase(repository: repository)
-        let viewModel = HomeViewModel(fetchFilterUseCase: fetchArticlesUseCase)
+        let remoteDataSource = LocaleFilterService()
+        let repository = FilterRepository(service: remoteDataSource)
+        let filterUseCase = FilterUseCase(filterRepository: repository)
+        
+        let localeArticleService = LocaleArticleService()
+        let articleRepository = ArticleRepository(service: localeArticleService)
+        let articleUseCase = ArticleUseCase(articleRepository: articleRepository)
+        
+        let viewModel = HomeViewModel(filterUseCase: filterUseCase, articleUseCase: articleUseCase)
 
         
         let storyboard = UIStoryboard(name: "HomeScreen", bundle: nil)

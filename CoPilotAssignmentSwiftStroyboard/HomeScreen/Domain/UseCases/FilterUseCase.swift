@@ -1,5 +1,5 @@
 //
-//  FetchFilterUseCase.swift
+//  FilterUseCase.swift
 //  CoPilotAssignmentSwiftStroyboard
 //
 //  Created by Prakasha on 06/03/25.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-class FetchFilterUseCase {
+class FilterUseCase {
     
     private let filterRepository: FilterRepositoryProtocol
     

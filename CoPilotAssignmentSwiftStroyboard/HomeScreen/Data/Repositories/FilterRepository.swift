@@ -14,7 +14,7 @@ protocol FilterRepositoryProtocol {
 class FilterRepository: FilterRepositoryProtocol {
     private let service: FilterServiceProtocol
     
-    init(service: FilterServiceProtocol = LocalFilterService()) {
+    init(service: FilterServiceProtocol = LocaleFilterService()) {
         self.service = service
     }
     

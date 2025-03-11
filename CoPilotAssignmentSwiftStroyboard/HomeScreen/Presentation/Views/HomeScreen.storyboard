@@ -30,16 +30,25 @@
                                 </collectionViewFlowLayout>
                                 <cells/>
                             </collectionView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="MkW-ac-W0K">
+                                <rect key="frame" x="0.0" y="102" width="393" height="716"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="MkW-ac-W0K" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Ado-mO-r87"/>
                             <constraint firstItem="bLK-zI-LtV" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="O0g-pu-8UD"/>
+                            <constraint firstItem="MkW-ac-W0K" firstAttribute="top" secondItem="bLK-zI-LtV" secondAttribute="bottom" id="PH8-xZ-PYx"/>
                             <constraint firstItem="bLK-zI-LtV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="VJ3-GC-dTD"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="bLK-zI-LtV" secondAttribute="trailing" id="cGX-K6-coO"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="MkW-ac-W0K" secondAttribute="trailing" id="csU-RK-385"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="MkW-ac-W0K" secondAttribute="bottom" id="tl4-tf-Nl6"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="articleListTableView" destination="MkW-ac-W0K" id="Q4f-m7-Gsd"/>
                         <outlet property="filterCollectionView" destination="bLK-zI-LtV" id="Q1N-Tj-ruX"/>
                     </connections>
                 </viewController>
