@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		CDAB462F2D8015510019F7B6 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CDAB462E2D8015510019F7B6 /* Kingfisher */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		CDD1AFD82D7828AB00DC6D22 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -40,31 +44,32 @@
 		CDD1AFFC2D782F6C00DC6D22 /* Exceptions for "CoPilotAssignmentSwiftStroyboard" folder in "CoPilotAssignmentSwiftStroyboardTests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				"/Localized: HomeScreen/DataResources/ArticleJson.json",
-				"/Localized: HomeScreen/DataResources/FilterDataJson.json",
+				"/Localized: Modules/HomeScreen/DataResources/ArticleJson.json",
+				"/Localized: Modules/HomeScreen/DataResources/FilterDataJson.json",
 				Base/AppCoordinator.swift,
 				Base/BaseViewController.swift,
 				Base/BaseViewModel.swift,
-				HomeScreen/Data/DTOs/ArticleModelDTO.swift,
-				HomeScreen/Data/DTOs/FilterModelDTO.swift,
-				HomeScreen/Data/LocalService/LocaleArticleService.swift,
-				HomeScreen/Data/LocalService/LocaleFilterService.swift,
-				HomeScreen/Data/Network/ArticleService.swift,
-				HomeScreen/Data/Repositories/ArticleRepository.swift,
-				HomeScreen/Data/Repositories/FilterRepository.swift,
-				HomeScreen/DataResources/ArticleListJson.json,
-				HomeScreen/DataResources/categories.json,
-				HomeScreen/Domain/Models/ArticleModel.swift,
-				HomeScreen/Domain/Models/FilterDataModel.swift,
-				HomeScreen/Domain/UseCases/ArticleUseCase.swift,
-				HomeScreen/Domain/UseCases/FilterUseCase.swift,
-				HomeScreen/Presentation/Controllers/HomeViewController.swift,
-				HomeScreen/Presentation/ViewModels/HomeViewModel.swift,
-				HomeScreen/Presentation/Views/ArticleTableViewCell.swift,
-				HomeScreen/Presentation/Views/ArticleTableViewCell.xib,
-				HomeScreen/Presentation/Views/DropDownCollectionViewCell.swift,
-				HomeScreen/Presentation/Views/DropDownCollectionViewCell.xib,
-				HomeScreen/Presentation/Views/HomeScreen.storyboard,
+				Modules/ArticleDetail/Coordinator/ArticleDetailCoordinator.swift,
+				Modules/HomeScreen/Data/DTOs/ArticleModelDTO.swift,
+				Modules/HomeScreen/Data/DTOs/FilterModelDTO.swift,
+				Modules/HomeScreen/Data/LocalService/LocaleArticleService.swift,
+				Modules/HomeScreen/Data/LocalService/LocaleFilterService.swift,
+				Modules/HomeScreen/Data/Network/ArticleService.swift,
+				Modules/HomeScreen/Data/Repositories/ArticleRepository.swift,
+				Modules/HomeScreen/Data/Repositories/FilterRepository.swift,
+				Modules/HomeScreen/DataResources/ArticleListJson.json,
+				Modules/HomeScreen/DataResources/categories.json,
+				Modules/HomeScreen/Domain/Models/ArticleModel.swift,
+				Modules/HomeScreen/Domain/Models/FilterDataModel.swift,
+				Modules/HomeScreen/Domain/UseCases/ArticleUseCase.swift,
+				Modules/HomeScreen/Domain/UseCases/FilterUseCase.swift,
+				Modules/HomeScreen/Presentation/Controllers/HomeViewController.swift,
+				Modules/HomeScreen/Presentation/ViewModels/HomeViewModel.swift,
+				Modules/HomeScreen/Presentation/Views/ArticleTableViewCell.swift,
+				Modules/HomeScreen/Presentation/Views/ArticleTableViewCell.xib,
+				Modules/HomeScreen/Presentation/Views/DropDownCollectionViewCell.swift,
+				Modules/HomeScreen/Presentation/Views/DropDownCollectionViewCell.xib,
+				Modules/HomeScreen/Presentation/Views/HomeScreen.storyboard,
 				Utilities/DropdownViewController.swift,
 			);
 			target = CDD1AFD62D7828AB00DC6D22 /* CoPilotAssignmentSwiftStroyboardTests */;
@@ -72,31 +77,32 @@
 		CDD1AFFD2D782F6C00DC6D22 /* Exceptions for "CoPilotAssignmentSwiftStroyboard" folder in "CoPilotAssignmentSwiftStroyboardUITests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				"/Localized: HomeScreen/DataResources/ArticleJson.json",
-				"/Localized: HomeScreen/DataResources/FilterDataJson.json",
+				"/Localized: Modules/HomeScreen/DataResources/ArticleJson.json",
+				"/Localized: Modules/HomeScreen/DataResources/FilterDataJson.json",
 				Base/AppCoordinator.swift,
 				Base/BaseViewController.swift,
 				Base/BaseViewModel.swift,
-				HomeScreen/Data/DTOs/ArticleModelDTO.swift,
-				HomeScreen/Data/DTOs/FilterModelDTO.swift,
-				HomeScreen/Data/LocalService/LocaleArticleService.swift,
-				HomeScreen/Data/LocalService/LocaleFilterService.swift,
-				HomeScreen/Data/Network/ArticleService.swift,
-				HomeScreen/Data/Repositories/ArticleRepository.swift,
-				HomeScreen/Data/Repositories/FilterRepository.swift,
-				HomeScreen/DataResources/ArticleListJson.json,
-				HomeScreen/DataResources/categories.json,
-				HomeScreen/Domain/Models/ArticleModel.swift,
-				HomeScreen/Domain/Models/FilterDataModel.swift,
-				HomeScreen/Domain/UseCases/ArticleUseCase.swift,
-				HomeScreen/Domain/UseCases/FilterUseCase.swift,
-				HomeScreen/Presentation/Controllers/HomeViewController.swift,
-				HomeScreen/Presentation/ViewModels/HomeViewModel.swift,
-				HomeScreen/Presentation/Views/ArticleTableViewCell.swift,
-				HomeScreen/Presentation/Views/ArticleTableViewCell.xib,
-				HomeScreen/Presentation/Views/DropDownCollectionViewCell.swift,
-				HomeScreen/Presentation/Views/DropDownCollectionViewCell.xib,
-				HomeScreen/Presentation/Views/HomeScreen.storyboard,
+				Modules/ArticleDetail/Coordinator/ArticleDetailCoordinator.swift,
+				Modules/HomeScreen/Data/DTOs/ArticleModelDTO.swift,
+				Modules/HomeScreen/Data/DTOs/FilterModelDTO.swift,
+				Modules/HomeScreen/Data/LocalService/LocaleArticleService.swift,
+				Modules/HomeScreen/Data/LocalService/LocaleFilterService.swift,
+				Modules/HomeScreen/Data/Network/ArticleService.swift,
+				Modules/HomeScreen/Data/Repositories/ArticleRepository.swift,
+				Modules/HomeScreen/Data/Repositories/FilterRepository.swift,
+				Modules/HomeScreen/DataResources/ArticleListJson.json,
+				Modules/HomeScreen/DataResources/categories.json,
+				Modules/HomeScreen/Domain/Models/ArticleModel.swift,
+				Modules/HomeScreen/Domain/Models/FilterDataModel.swift,
+				Modules/HomeScreen/Domain/UseCases/ArticleUseCase.swift,
+				Modules/HomeScreen/Domain/UseCases/FilterUseCase.swift,
+				Modules/HomeScreen/Presentation/Controllers/HomeViewController.swift,
+				Modules/HomeScreen/Presentation/ViewModels/HomeViewModel.swift,
+				Modules/HomeScreen/Presentation/Views/ArticleTableViewCell.swift,
+				Modules/HomeScreen/Presentation/Views/ArticleTableViewCell.xib,
+				Modules/HomeScreen/Presentation/Views/DropDownCollectionViewCell.swift,
+				Modules/HomeScreen/Presentation/Views/DropDownCollectionViewCell.xib,
+				Modules/HomeScreen/Presentation/Views/HomeScreen.storyboard,
 				Utilities/DropdownViewController.swift,
 			);
 			target = CDD1AFE02D7828AB00DC6D22 /* CoPilotAssignmentSwiftStroyboardUITests */;
@@ -131,6 +137,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDAB462F2D8015510019F7B6 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,6 +198,7 @@
 			);
 			name = CoPilotAssignmentSwiftStroyboard;
 			packageProductDependencies = (
+				CDAB462E2D8015510019F7B6 /* Kingfisher */,
 			);
 			productName = CoPilotAssignmentSwiftStroyboard;
 			productReference = CDD1AFC12D7828A900DC6D22 /* CoPilotAssignmentSwiftStroyboard.app */;
@@ -274,6 +282,9 @@
 			);
 			mainGroup = CDD1AFB82D7828A900DC6D22;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				CDF73A5D2D801475003B9497 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = CDD1AFC22D7828A900DC6D22 /* Products */;
 			projectDirPath = "";
@@ -629,6 +640,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CDF73A5D2D801475003B9497 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CDAB462E2D8015510019F7B6 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CDF73A5D2D801475003B9497 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CDD1AFB92D7828A900DC6D22 /* Project object */;
 }

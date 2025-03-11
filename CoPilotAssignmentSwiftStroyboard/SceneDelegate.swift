@@ -40,15 +40,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let articleRepository = ArticleRepository(service: localeArticleService)
         let articleUseCase = ArticleUseCase(articleRepository: articleRepository)
         
-        let viewModel = HomeViewModel(filterUseCase: filterUseCase, articleUseCase: articleUseCase)
-
-        
         let storyboard = UIStoryboard(name: "HomeScreen", bundle: nil)
         let homeVC = storyboard.instantiateInitialViewController() as! HomeViewController
+        let navgationController = UINavigationController(rootViewController: homeVC)
+        
+        let viewModel = HomeViewModel(filterUseCase: filterUseCase, articleUseCase: articleUseCase, coordinator: HomeScreenCoordinator(navigationController: navgationController))
         homeVC.viewModel = viewModel //container.resolve(HomeViewModel)!
         
         window = UIWindow(windowScene: windowScene)
-        window?.rootViewController = UINavigationController(rootViewController: homeVC)
+        window?.rootViewController = navgationController //UINavigationController(rootViewController: homeVC)
         window?.makeKeyAndVisible()
     }
 
