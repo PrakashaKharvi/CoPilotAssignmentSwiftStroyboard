@@ -16,21 +16,6 @@ class ArticleDetailCoordinator {
 
     // Navigate to Article Detail Screen
     func navigateToArticleTagScreen(tagText: String) {
-//        let remoteDataSource = LocaleFilterService()
-//        let repository = FilterRepository(service: remoteDataSource)
-//        let filterUseCase = FilterUseCase(filterRepository: repository)
-//        
-//        let localeArticleService = LocaleArticleService()
-//        let articleRepository = ArticleRepository(service: localeArticleService)
-//        let articleUseCase = ArticleUseCase(articleRepository: articleRepository)
-//        
-//        let storyboard = UIStoryboard(name: "HomeScreen", bundle: nil)
-//        let homeVC = storyboard.instantiateInitialViewController() as! HomeViewController
-//        let navgationController = UINavigationController(rootViewController: homeVC)
-//        
-//        let viewModel = HomeViewModel(filterUseCase: filterUseCase, articleUseCase: articleUseCase, coordinator: HomeScreenCoordinator(navigationController: navgationController))
-//        homeVC.viewModel = viewModel //container.resolve(HomeViewModel)!
-                
         let storyboard = UIStoryboard(name: "HomeScreen", bundle: nil)
         let homeVC = storyboard.instantiateInitialViewController() as! HomeViewController
         

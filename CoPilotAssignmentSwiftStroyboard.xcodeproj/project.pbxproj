@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD3CDCC92D81838100167508 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CD3CDCC82D81838100167508 /* README.md */; };
 		CDAB462F2D8015510019F7B6 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CDAB462E2D8015510019F7B6 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD3CDCC82D81838100167508 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CDD1AFC12D7828A900DC6D22 /* CoPilotAssignmentSwiftStroyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoPilotAssignmentSwiftStroyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDD1AFD72D7828AB00DC6D22 /* CoPilotAssignmentSwiftStroyboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoPilotAssignmentSwiftStroyboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDD1AFE12D7828AB00DC6D22 /* CoPilotAssignmentSwiftStroyboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoPilotAssignmentSwiftStroyboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,7 +46,6 @@
 		CDD1AFFC2D782F6C00DC6D22 /* Exceptions for "CoPilotAssignmentSwiftStroyboard" folder in "CoPilotAssignmentSwiftStroyboardTests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				"/Localized: Modules/HomeScreen/DataResources/ArticleJson.json",
 				"/Localized: Modules/HomeScreen/DataResources/FilterDataJson.json",
 				Base/AppCoordinator.swift,
 				Base/BaseViewController.swift,
@@ -58,7 +59,6 @@
 				Modules/HomeScreen/Data/Repositories/ArticleRepository.swift,
 				Modules/HomeScreen/Data/Repositories/FilterRepository.swift,
 				Modules/HomeScreen/DataResources/ArticleListJson.json,
-				Modules/HomeScreen/DataResources/categories.json,
 				Modules/HomeScreen/Domain/Models/ArticleModel.swift,
 				Modules/HomeScreen/Domain/Models/FilterDataModel.swift,
 				Modules/HomeScreen/Domain/UseCases/ArticleUseCase.swift,
@@ -70,14 +70,12 @@
 				Modules/HomeScreen/Presentation/Views/DropDownCollectionViewCell.swift,
 				Modules/HomeScreen/Presentation/Views/DropDownCollectionViewCell.xib,
 				Modules/HomeScreen/Presentation/Views/HomeScreen.storyboard,
-				Utilities/DropdownViewController.swift,
 			);
 			target = CDD1AFD62D7828AB00DC6D22 /* CoPilotAssignmentSwiftStroyboardTests */;
 		};
 		CDD1AFFD2D782F6C00DC6D22 /* Exceptions for "CoPilotAssignmentSwiftStroyboard" folder in "CoPilotAssignmentSwiftStroyboardUITests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				"/Localized: Modules/HomeScreen/DataResources/ArticleJson.json",
 				"/Localized: Modules/HomeScreen/DataResources/FilterDataJson.json",
 				Base/AppCoordinator.swift,
 				Base/BaseViewController.swift,
@@ -91,7 +89,6 @@
 				Modules/HomeScreen/Data/Repositories/ArticleRepository.swift,
 				Modules/HomeScreen/Data/Repositories/FilterRepository.swift,
 				Modules/HomeScreen/DataResources/ArticleListJson.json,
-				Modules/HomeScreen/DataResources/categories.json,
 				Modules/HomeScreen/Domain/Models/ArticleModel.swift,
 				Modules/HomeScreen/Domain/Models/FilterDataModel.swift,
 				Modules/HomeScreen/Domain/UseCases/ArticleUseCase.swift,
@@ -103,7 +100,6 @@
 				Modules/HomeScreen/Presentation/Views/DropDownCollectionViewCell.swift,
 				Modules/HomeScreen/Presentation/Views/DropDownCollectionViewCell.xib,
 				Modules/HomeScreen/Presentation/Views/HomeScreen.storyboard,
-				Utilities/DropdownViewController.swift,
 			);
 			target = CDD1AFE02D7828AB00DC6D22 /* CoPilotAssignmentSwiftStroyboardUITests */;
 		};
@@ -161,6 +157,7 @@
 		CDD1AFB82D7828A900DC6D22 = {
 			isa = PBXGroup;
 			children = (
+				CD3CDCC82D81838100167508 /* README.md */,
 				CDD1AFC32D7828A900DC6D22 /* CoPilotAssignmentSwiftStroyboard */,
 				CDD1AFDA2D7828AB00DC6D22 /* CoPilotAssignmentSwiftStroyboardTests */,
 				CDD1AFE42D7828AB00DC6D22 /* CoPilotAssignmentSwiftStroyboardUITests */,
@@ -302,6 +299,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD3CDCC92D81838100167508 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

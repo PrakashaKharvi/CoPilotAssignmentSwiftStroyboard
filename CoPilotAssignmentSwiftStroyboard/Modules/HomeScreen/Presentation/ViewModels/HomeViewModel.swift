@@ -122,12 +122,6 @@ class HomeViewModel: BaseViewModel {
                     }
                 }
             }
-            
-//            // Once filter is added then implement filter on Article list data
-//            var tags = [String]()
-//            if let getTag = filterDic["4"] {
-//                tags.append(getTag)
-//            }
             self.applyFilterOnArticleList()
         }
     }
@@ -135,13 +129,6 @@ class HomeViewModel: BaseViewModel {
     // MARK: - Apply Filter
     private func applyFilterOnArticleList() {
         let tags = filterDic["4"] != nil ? [filterDic["4"]!] : nil
-        
-//        // Once filter is added then implement filter on Article list data
-//                   var tags = [String]()
-//                   if let getTag = filterDic["4"] {
-//                       tags.append(getTag)
-//                   }
-        
         self.articleListModelToDisplay = filterUseCase.filterFor(
             originalList: articleListModelOriginal,
             authorId: filterDic["1"],
