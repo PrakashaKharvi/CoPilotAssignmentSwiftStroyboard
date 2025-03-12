@@ -16,7 +16,6 @@ class TagsCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        self.labelHolderView.backgroundColor = .lightGray
         self.labelHolderView.layer.cornerRadius = 12.0
         self.labelHolderView.clipsToBounds = true
         self.labelHolderView.layer.borderWidth = 1.0

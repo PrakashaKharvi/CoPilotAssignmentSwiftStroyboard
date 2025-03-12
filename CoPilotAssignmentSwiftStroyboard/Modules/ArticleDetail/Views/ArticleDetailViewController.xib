@@ -26,34 +26,34 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="rwT-jv-ldl">
-                    <rect key="frame" x="12" y="80" width="369" height="717"/>
+                    <rect key="frame" x="21" y="89" width="351" height="699"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZA-J9-oWa">
-                            <rect key="frame" x="0.0" y="0.0" width="369" height="21.666666666666668"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <rect key="frame" x="0.0" y="0.0" width="351" height="19.333333333333332"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yCR-NX-EEU">
-                            <rect key="frame" x="0.0" y="33.666666666666671" width="369" height="100.00000000000001"/>
+                            <rect key="frame" x="0.0" y="31.333333333333329" width="351" height="99.999999999999986"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="100" id="hgc-zm-kEA"/>
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yd8-8p-Otz">
-                            <rect key="frame" x="0.0" y="145.66666666666666" width="369" height="19.333333333333343"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <rect key="frame" x="0.0" y="143.33333333333334" width="351" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgZ-0R-TVQ">
-                            <rect key="frame" x="0.0" y="177" width="369" height="19.333333333333343"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <rect key="frame" x="0.0" y="172.33333333333331" width="351" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z5s-8B-HvX">
-                            <rect key="frame" x="0.0" y="208.33333333333331" width="369" height="150"/>
+                            <rect key="frame" x="0.0" y="201.33333333333331" width="351" height="150"/>
                             <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="150" id="cjF-ec-iWG"/>
@@ -64,14 +64,14 @@
                             </wkWebViewConfiguration>
                         </wkWebView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TWc-26-CL4">
-                            <rect key="frame" x="0.0" y="370.33333333333331" width="369" height="199.99999999999994"/>
+                            <rect key="frame" x="0.0" y="363.33333333333331" width="351" height="199.99999999999994"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="200" id="z9M-l2-iMH"/>
                             </constraints>
                         </view>
                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="p4Z-UX-8YJ">
-                            <rect key="frame" x="0.0" y="582.33333333333337" width="369" height="134.66666666666663"/>
+                            <rect key="frame" x="0.0" y="575.33333333333337" width="351" height="123.66666666666663"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="NN2-vh-PKH">
                                 <size key="itemSize" width="128" height="128"/>
@@ -86,10 +86,10 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rwT-jv-ldl" secondAttribute="trailing" constant="12" id="2pj-an-mUF"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="rwT-jv-ldl" secondAttribute="bottom" constant="21" id="4zR-p1-B60"/>
-                <constraint firstItem="rwT-jv-ldl" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="21" id="6SN-d5-NRP"/>
-                <constraint firstItem="rwT-jv-ldl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="12" id="ssb-aG-m73"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rwT-jv-ldl" secondAttribute="trailing" constant="21" id="2pj-an-mUF"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="rwT-jv-ldl" secondAttribute="bottom" constant="30" id="4zR-p1-B60"/>
+                <constraint firstItem="rwT-jv-ldl" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="6SN-d5-NRP"/>
+                <constraint firstItem="rwT-jv-ldl" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="21" id="ssb-aG-m73"/>
             </constraints>
             <point key="canvasLocation" x="129.00763358778624" y="20.422535211267608"/>
         </view>
