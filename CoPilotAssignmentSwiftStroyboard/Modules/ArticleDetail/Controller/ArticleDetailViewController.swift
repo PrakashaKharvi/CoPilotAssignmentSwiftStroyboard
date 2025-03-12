@@ -93,6 +93,11 @@ class ArticleDetailViewController: UIViewController {
             self?.articleTagsCollectionView.reloadData()
         }
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        playerView.stopPlaying()
+    }
 }
 
 extension ArticleDetailViewController: UICollectionViewDataSource {
@@ -112,117 +117,3 @@ extension ArticleDetailViewController: UICollectionViewDelegate {
         self.viewModel.navigateToArticleTagScreen(at: indexPath.row)
     }
 }
-
-//extension ArticleDetailViewController {
-//
-//    private func setupPlayer(url: String) {
-//        // 1. Video URL
-//        guard let url = URL(string: url) else { return }
-//
-//        // 2. Create AVPlayer
-//        player = AVPlayer(url: url)
-//        
-//        // 3. Configure Player Layer
-//        playerLayer.player = player
-//        playerLayer.videoGravity = .resizeAspectFill // Adjust video aspect ratio
-//        
-//        // 4. Attach PlayerLayer to View
-//        playerLayer.frame = view.bounds
-//        self.articleVideoHolderView.layer.addSublayer(playerLayer)
-//        
-//        // 5. Start Playing
-//        player?.play()
-//    }
-//    
-//    private func setupControls() {
-//        // Play/Pause Button
-//        playPauseButton.setImage(UIImage(systemName: "pause.fill"), for: .normal)
-//        playPauseButton.tintColor = .white
-//        playPauseButton.backgroundColor = UIColor.black.withAlphaComponent(0.5)
-//        playPauseButton.layer.cornerRadius = 12
-//        playPauseButton.addTarget(self, action: #selector(playPauseTapped), for: .touchUpInside)
-//
-//        // Seek Bar (UISlider)
-//        seekSlider.minimumValue = 0
-//        seekSlider.maximumValue = 1
-//        seekSlider.addTarget(self, action: #selector(seekSliderChanged), for: .valueChanged)
-//
-//        // Auto Layout
-//        let controlsStackView = UIStackView(arrangedSubviews: [playPauseButton, seekSlider])
-//        controlsStackView.axis = .horizontal
-//        controlsStackView.spacing = 10
-//        controlsStackView.alignment = .center
-//        controlsStackView.distribution = .fillProportionally
-//        controlsStackView.translatesAutoresizingMaskIntoConstraints = false
-//
-//        self.articleVideoHolderView.addSubview(controlsStackView)
-//
-//        NSLayoutConstraint.activate([
-//            controlsStackView.leadingAnchor.constraint(equalTo: articleVideoHolderView.leadingAnchor, constant: 7),
-//            controlsStackView.trailingAnchor.constraint(equalTo: articleVideoHolderView.trailingAnchor, constant: -7),
-//            controlsStackView.bottomAnchor.constraint(equalTo: articleVideoHolderView.bottomAnchor, constant: -7),
-//            playPauseButton.widthAnchor.constraint(equalToConstant: 39),
-//            playPauseButton.heightAnchor.constraint(equalToConstant: 39),
-//        ])
-//
-//        // Tap Gesture to Show/Hide Controls
-//        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(toggleControls))
-//        self.articleVideoHolderView.addGestureRecognizer(tapGesture)
-//    }
-//
-//    private func setupObservers() {
-//        guard let player = player else { return }
-//        let interval = CMTime(seconds: 1, preferredTimescale: CMTimeScale(NSEC_PER_SEC))
-//        player.addPeriodicTimeObserver(forInterval: interval, queue: .main) { [weak self] time in
-//            guard let duration = player.currentItem?.duration.seconds, duration > 0 else { return }
-//            self?.seekSlider.value = Float(time.seconds / duration)
-//        }
-//    }
-//
-//    @objc private func playPauseTapped() {
-//        guard let player = player else { return }
-//        if player.timeControlStatus == .playing {
-//            player.pause()
-//            playPauseButton.setImage(UIImage(systemName: "play.fill"), for: .normal)
-//        } else {
-//            player.play()
-//            playPauseButton.setImage(UIImage(systemName: "pause.fill"), for: .normal)
-//        }
-//        resetControlsTimer()
-//    }
-//
-//    @objc private func seekSliderChanged() {
-//        guard let duration = player?.currentItem?.duration.seconds, duration > 0 else { return }
-//        let newTime = CMTime(seconds: Double(seekSlider.value) * duration, preferredTimescale: CMTimeScale(NSEC_PER_SEC))
-//        player?.seek(to: newTime)
-//        resetControlsTimer()
-//    }
-//
-//    @objc private func toggleControls() {
-//        let isHidden = playPauseButton.isHidden
-//        playPauseButton.isHidden = !isHidden
-//        seekSlider.isHidden = !isHidden
-//        if !isHidden {
-//            resetControlsTimer()
-//        }
-//    }
-//
-//    private func resetControlsTimer() {
-//        controlsTimer?.invalidate()
-//        controlsTimer = Timer.scheduledTimer(withTimeInterval: 3, repeats: false) { [weak self] _ in
-//            self?.playPauseButton.isHidden = true
-//            self?.seekSlider.isHidden = true
-//        }
-//    }
-//
-//    override func viewDidLayoutSubviews() {
-//        super.viewDidLayoutSubviews()
-//        playerLayer.frame = self.articleVideoHolderView.bounds  // Ensure player resizes with view
-//    }
-//    
-//    override func viewWillDisappear(_ animated: Bool) {
-//        super.viewWillDisappear(animated)
-//        self.player?.pause()
-//        self.playPauseButton.setImage(UIImage(systemName: "play.fill"), for: .normal)
-//    }
-//}

@@ -63,12 +63,17 @@ class VideoPlayerView: UIView {
     @objc private func playPauseTapped() {
         guard let player = player else { return }
         if player.timeControlStatus == .playing {
-            player.pause()
-            playPauseButton.setImage(UIImage(systemName: "play.fill"), for: .normal)
+            self.stopPlaying()
         } else {
             player.play()
             playPauseButton.setImage(UIImage(systemName: "pause.fill"), for: .normal)
         }
+    }
+    
+    func stopPlaying() {
+        guard let player = player else { return }
+        player.pause()
+        playPauseButton.setImage(UIImage(systemName: "play.fill"), for: .normal)
     }
 
     @objc private func seekSliderChanged() {

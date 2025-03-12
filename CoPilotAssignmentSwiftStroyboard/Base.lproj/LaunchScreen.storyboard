@@ -16,16 +16,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Launch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qeE-29-QOB">
-                                <rect key="frame" x="162.66666666666666" y="413.33333333333331" width="67.666666666666657" height="25.333333333333314"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copilot Assignment Swift Stroyboard" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qeE-29-QOB">
+                                <rect key="frame" x="30" y="390.33333333333331" width="333" height="71.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qeE-29-QOB" secondAttribute="trailing" constant="30" id="ZP7-AF-l5i"/>
+                            <constraint firstItem="qeE-29-QOB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="avW-G1-sIp"/>
                             <constraint firstItem="qeE-29-QOB" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="bA2-yM-1KJ"/>
                             <constraint firstItem="qeE-29-QOB" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="s81-Se-t3W"/>
                         </constraints>
